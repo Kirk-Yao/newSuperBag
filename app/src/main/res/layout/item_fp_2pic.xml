@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fp_2pic_time"
+        android:text="26/06\n周日"
+        android:paddingTop="10dp"
+        android:paddingLeft="5dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <View
+            android:layout_width="2dp"
+            android:layout_height="20dp"
+            android:background="@color/gray"
+            android:layout_marginLeft="5dp">
+        </View>
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/green_dot"></View>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray"
+            android:layout_marginLeft="5dp"></View>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="记事"
+                android:id="@+id/fp_2pic_tag1"
+                android:padding="5dp"
+                android:textSize="12sp"
+                android:background="@drawable/tag_background"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="记事"
+                android:id="@+id/fp_2pic_tag2"
+                android:layout_marginLeft="18dp"
+                android:padding="5dp"
+                android:textSize="12sp"
+                android:background="@drawable/tag_background"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="记事"
+                android:id="@+id/fp_2pic_tag3"
+                android:layout_marginLeft="18dp"
+                android:padding="5dp"
+                android:textSize="12sp"
+                android:background="@drawable/tag_background"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fp_2pic_weather"
+                android:text="晴"
+                android:padding="5dp"
+                android:textSize="12sp"
+                android:background="@drawable/weather_background"
+                android:layout_marginLeft="80dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开心"
+                android:id="@+id/fp_2pic_feelings"
+                android:layout_marginLeft="18dp"
+                android:padding="5dp"
+                android:textSize="12sp"
+                android:background="@drawable/feelings_background"
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fp_2pic_content"
+            android:maxLines="4"
+            android:text="每天用淘宝和QQ会发现淘宝的商品详情页和qq的好友动态页都不约而同的用了工具栏透明渐变效果，淘宝是为了不挡住商品图片，qq设置为了不挡住header image背景，效果感觉还挺好看，老有人问怎么做的。"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:id="@+id/fp_2pic_iv1"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:id="@+id/fp_2pic_iv2"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fp_2pic_oldTime"
+                android:text="2016-06-26 17:05"
+                android:textSize="10sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fp_2pic_newTime"
+                android:layout_alignParentRight="true"
+                android:text="2016-07-01"
+                android:textColor="@color/red"
+                android:textSize="10sp"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

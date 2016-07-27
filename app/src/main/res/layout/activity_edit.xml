@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/edit_ll"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/darkGray"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:id="@+id/edit_back_ll"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/edit_back"
+                android:background="@drawable/back_white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:id="@+id/edit_save_ll"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/edit_save"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/save"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/pic4"
+            android:id="@+id/edit_head_icon"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016-06-26  周日"
+            android:layout_toRightOf="@+id/edit_head_icon"
+            android:paddingLeft="5dp"
+            android:id="@+id/edit_time"
+            android:layout_centerVertical="true"
+            android:textColor="@color/light_green"/>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="40dp"
+            android:background="@color/gray"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/edit_view"></View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="类别:"
+            android:layout_centerVertical="true"
+            android:paddingLeft="20dp"
+            android:layout_toRightOf="@+id/edit_view"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/edit_rg"
+            android:orientation="horizontal">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:id="@+id/edit_diary"
+                android:text="日记"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_memo"
+                android:text="备忘"/>
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/gray"></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/edit_weather_bt"
+            android:text="晴"
+            android:textSize="12sp"
+            android:background="@drawable/weather_background"/>
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="12sp"
+            android:id="@+id/edit_feelings_bt"
+            android:background="@drawable/feelings_background"
+            android:layout_toRightOf="@+id/edit_weather_bt"
+            android:text="心情"/>
+       <Button
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:id="@+id/add_tag_bt"
+           android:layout_marginLeft="10dp"
+            android:text="添加标签"
+            android:textSize="12sp"
+            android:background="@color/gray"
+           android:layout_toRightOf="@+id/edit_feelings_bt"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/edit_tag2"
+            android:padding="5dp"
+            android:background="@drawable/edit_tag_background"
+            android:text=""
+            android:layout_toRightOf="@+id/add_tag_bt"
+            android:gravity="center_vertical"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/edit_tag_background"
+            android:id="@+id/edit_tag3"
+            android:padding="5dp"
+            android:text=""
+            android:layout_toRightOf="@+id/edit_tag2"
+            android:gravity="center_vertical"/>
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/edit_alarm"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/alarm_black"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/gray"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:id="@+id/edit_et"
+            android:background="@null"
+            android:hint="写点什么吧..."/>
+    </LinearLayout>
+
+    <Button
+    android:layout_width="35dp"
+    android:layout_height="35dp"
+
+    android:background="@drawable/pic"
+    android:id="@+id/edit_pic_bt"/>
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="5dp"-->
+        <!--android:id="@+id/edit_bottom_LL"-->
+        <!--android:background="@color/gray"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:layout_weight="1">-->
+            <!--<Button-->
+                <!--android:layout_width="35dp"-->
+                <!--android:layout_height="35dp"-->
+
+                <!--android:background="@drawable/pic"-->
+                <!--android:id="@+id/edit_pic_bt"/>-->
+
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:layout_weight="1">-->
+            <!--<Button-->
+                <!--android:layout_width="30dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_marginTop="2dp"-->
+                <!--android:background="@drawable/face"-->
+                <!--android:id="@+id/edit_face_bt"/>-->
+
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:layout_weight="1">-->
+            <!--<Button-->
+                <!--android:layout_width="35dp"-->
+                <!--android:layout_height="35dp"-->
+                <!--android:background="@drawable/weather"-->
+                <!--android:id="@+id/edit_weather_bt"/>-->
+
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:layout_weight="1">-->
+            <!--<Button-->
+                <!--android:layout_width="30dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_marginTop="2dp"-->
+                <!--android:background="@drawable/location"-->
+                <!--android:id="@+id/edit_location_bt"/>-->
+
+        <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+
+</LinearLayout>
